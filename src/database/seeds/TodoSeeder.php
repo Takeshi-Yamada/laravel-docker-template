@@ -11,6 +11,7 @@ class TodoSeeder extends Seeder
      */
     public function run()
     {
+        //データベース初期化
         DB::table('todos')->truncate();
 
         $testData = [
@@ -25,7 +26,7 @@ class TodoSeeder extends Seeder
                 'updated_at' => now(),
             ],
         ];
-
+        //テストデータをDBに登録
         DB::table('todos')->insert($testData);
     }
 }
