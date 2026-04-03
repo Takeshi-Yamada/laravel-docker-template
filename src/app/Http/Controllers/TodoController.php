@@ -13,7 +13,7 @@ class TodoController extends Controller
     public function __construct(Todo $todo)
     {
         #この関数内で使えるTodoクラスのインスタンスをthis->todoに作成
-        $this->todo =$todo;
+        $this->todo = $todo;
     }
 
     public function index()
